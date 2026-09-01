@@ -1,0 +1,9 @@
+name: cnn_only
+
+components:
+  cnn: true
+  forensic: false
+  fft: false
+
+fusion:
+  method: none

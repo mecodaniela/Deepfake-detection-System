@@ -1,0 +1,35 @@
+{
+  "metrics_threshold_05": {
+    "accuracy": 0.901,
+    "precision": 0.918580375782881,
+    "recall": 0.88,
+    "f1": 0.898876404494382,
+    "roc_auc": 0.961664,
+    "confusion_matrix": [
+      [
+        461,
+        39
+      ],
+      [
+        60,
+        440
+      ]
+    ]
+  },
+  "two_threshold_system": {
+    "t1_real": 0.6015334735184938,
+    "t2_fake": 0.8170197355749621,
+    "n_total": 1000,
+    "n_real_certain": 542,
+    "n_fake_certain": 406,
+    "n_uncertain": 52,
+    "coverage": 0.948,
+    "accuracy_on_certain": 0.9113924050632911
+  },
+  "feature_names": [
+    "cnn",
+    "cfa",
+    "dct",
+    "fft"
+  ]
+}

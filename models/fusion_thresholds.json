@@ -1,0 +1,11 @@
+{
+  "t1_real": 0.6015334735184938,
+  "t2_fake": 0.8170197355749621,
+  "target_precision": 0.95,
+  "feature_names": [
+    "cnn",
+    "cfa",
+    "dct",
+    "fft"
+  ]
+}

@@ -1,0 +1,3 @@
+name: cnn_fft
+features: [cnn, fft]
+description: "CNN + FFT (frequency_layer)"

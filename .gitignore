@@ -1,0 +1,37 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Dataset (shumë i madh — s'ngarkohet te GitHub; përfshi vetëm skriptet që e gjenerojnë)
+data/frames/
+data/raw/
+data/degraded/
+data/*.csv
+
+# data/splits/ MBAHET (i vogël, ~284K — përmban listat train/val/test për reproducibilitet)
+# data/processed/ është bosh aktualisht, s'ka nevojë përjashtimi eksplicit
+
+# Model checkpoints (kontrolluar: të gjithë <20MB, brenda limitit GitHub — mbahen)
+
+# Outputs të gjeneruara (rezultate, figura, raporte të përkohshme)
+outputs/
+!outputs/.gitkeep
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Env variables
+.env

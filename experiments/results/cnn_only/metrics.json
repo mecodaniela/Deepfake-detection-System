@@ -1,0 +1,16 @@
+{
+  "config": {
+    "name": "cnn_only",
+    "features": [
+      "cnn"
+    ],
+    "description": "CNN i vet\u00ebm, pa asnj\u00eb sinjal forenzik ose frekuence"
+  },
+  "metrics": {
+    "accuracy": 0.901,
+    "precision": 0.918580375782881,
+    "recall": 0.88,
+    "f1": 0.898876404494382,
+    "roc_auc": 0.964232
+  }
+}

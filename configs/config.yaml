@@ -1,0 +1,59 @@
+paths:
+  raw_data: data/raw/
+  processed_data: data/processed/
+  splits_dir: data/splits/
+  results_dir: experiments/results/
+  reports_dir: outputs/reports/
+
+data:
+  datasets:
+    - name: faceforensics
+      path: data/raw/faceforensics
+    - name: dfdc
+      path: data/raw/dfdc
+    - name: celebdf
+      path: data/raw/celebdf
+  frame_sampling_rate: 1          # 1 frame për X sekonda video
+  image_size: [224, 224]
+  split_ratios:
+    train: 0.6
+    fusion_train: 0.15
+    calibration: 0.15
+    test: 0.10
+  split_level: video               # video | identity — anti-leakage
+
+forensic_layer:
+  ela:
+    jpeg_quality: 90
+  cfa:
+    enabled: true
+  dct:
+    enabled: true
+
+dl_layer:
+  architecture: xception           # ose efficientnet
+  batch_size: 32
+  learning_rate: 0.0001
+  epochs: 30
+  pretrained: true
+
+frequency_layer:
+  method: fft_heuristic            # fft_heuristic | frequency_model (nëse zgjerohet më vonë)
+
+fusion:
+  method: logistic_regression
+  calibration_method: platt        # platt | isotonic
+
+thresholds:
+  method: roc_precision_recall     # si nxirren T1/T2
+  frozen: false                    # bëhet true pasi ngrihen, evidencë që s'ndryshohen më
+
+degradation_testing:
+  jpeg_qualities: [90, 70, 50]
+  resize_ratios: [0.75]
+
+explainability:
+  gradcam_layer: block14_sepconv2  # varet nga arkitektura e CNN
+  overlay_method: iou
+
+random_seed: 42

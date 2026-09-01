@@ -1,0 +1,19 @@
+{
+  "config": {
+    "name": "cnn_forensic",
+    "features": [
+      "cnn",
+      "ela",
+      "cfa",
+      "dct"
+    ],
+    "description": "CNN + forensic_layer (ELA/CFA/DCT)"
+  },
+  "metrics": {
+    "accuracy": 0.899,
+    "precision": 0.9164926931106472,
+    "recall": 0.878,
+    "f1": 0.8968335035750766,
+    "roc_auc": 0.96364
+  }
+}

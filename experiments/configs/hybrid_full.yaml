@@ -1,0 +1,9 @@
+name: hybrid_full
+
+components:
+  cnn: true
+  forensic: true
+  fft: true
+
+fusion:
+  method: logistic
