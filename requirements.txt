@@ -10,4 +10,5 @@ mtcnn
 scipy
 streamlit
 grad-cam
-Pillowreportlab
+Pillow
+reportlab
