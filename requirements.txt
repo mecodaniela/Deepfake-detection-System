@@ -8,5 +8,6 @@ tqdm
 matplotlib
 mtcnn
 scipy
+streamlit
 grad-cam
-Pillow
+Pillowreportlab
