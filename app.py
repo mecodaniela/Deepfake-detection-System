@@ -43,9 +43,10 @@ st.markdown(
     .hero {
         padding: 2.2rem 2.5rem;
         border-radius: 16px;
-        background: linear-gradient(135deg, #1B4F72 0%, #2E86AB 100%);
+        background: linear-gradient(135deg, #6B0000 0%, #4A3F30 100%);
         color: white;
         margin-bottom: 1.8rem;
+        border: 1px solid #C9A227;
     }
     .hero h1 {
         font-size: 2.0rem;
@@ -60,16 +61,17 @@ st.markdown(
     }
 
     .info-card {
-        background-color: #F4F6F8;
+        background-color: #EDE3D0;
         border-radius: 12px;
         padding: 1.1rem 1.3rem;
-        border: 1px solid #E3E7EA;
+        border: 1px solid #4A3F30;
     }
 
     .verdict-card {
         padding: 1.6rem 1.8rem;
         border-radius: 14px;
         margin-bottom: 1.2rem;
+        border: 1px solid #C9A227;
     }
     .verdict-label {
         font-size: 0.82rem;
@@ -92,35 +94,37 @@ st.markdown(
         font-size: 1.15rem;
         font-weight: 700;
         margin: 1.6rem 0 0.6rem 0;
-        color: #1B4F72;
-        border-bottom: 2px solid #E3E7EA;
+        color: #6B0000;
+        border-bottom: 2px solid #C9A227;
         padding-bottom: 0.4rem;
     }
 
     div[data-testid="stMetric"] {
-        background-color: #F4F6F8;
+        background-color: #EDE3D0;
         border-radius: 10px;
         padding: 0.8rem 1rem;
-        border: 1px solid #E3E7EA;
+        border: 1px solid #4A3F30;
     }
 
     div.stButton > button[kind="primary"] {
-        background-color: #1B4F72;
+        background-color: #6B0000;
+        border: 1px solid #C9A227;
         border-radius: 8px;
         font-weight: 600;
         padding: 0.6rem 1.4rem;
+        color: white;
     }
     div.stButton > button[kind="primary"]:hover {
-        background-color: #143C57;
+        background-color: #4A0000;
     }
 
     .disclaimer-box {
-        background-color: #FFF7E0;
-        border-left: 4px solid #B8860B;
+        background-color: #FFF6DD;
+        border-left: 4px solid #C9A227;
         border-radius: 8px;
         padding: 0.9rem 1.1rem;
         font-size: 0.9rem;
-        color: #5C4A0A;
+        color: #4A3F30;
     }
     </style>
     """,
